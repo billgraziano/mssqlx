@@ -1,0 +1,13 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/denisenkom/go-mssqldb",
+			"repository": "https://github.com/denisenkom/go-mssqldb",
+			"vcs": "git",
+			"revision": "11b2859924c1e3c3da056fd4e0976b93883f3545",
+			"branch": "master",
+			"notests": true
+		}
+	]
+}

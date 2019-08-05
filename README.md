@@ -1,18 +1,8 @@
 # mssqlx
 SQL Server helper library for GO
+
+This is a work-in-progress.  Please don't use.
 ```
-const (
-  DriverMSSQL = "mssql"
-  DriverODBC = "odbc"
-)
-
-// Connection holds Native or MSSQL connections
-type Connection struct {
-  type "mssql", "odbc", "" -- will return either
-  ODBCDriver string 
-  Various settings...
-}
-
 type Server struct {
   ComputerName string
   InstanceName string
@@ -29,6 +19,7 @@ type Error struct {
   Severity
   State 
   Message
+  RawMessage
   ...
 }
 
@@ -53,6 +44,3 @@ mssql.GetSession(db, Connection, "mssql|odbc")
 
 // Parse SQL Server errors to number, state, line, etc.
 // Parse @@VERSION
-
-
-
